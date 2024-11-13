@@ -28,8 +28,8 @@ video {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 1); /* Initial white */
-  position: fixed; /* Keeps it fixed on the viewport */
+  background-color: rgba(255, 255, 255, 1);
+
   width: 100%;
   transition: background-color 0.3s ease; /* Smooth transition for opacity change */
 }
