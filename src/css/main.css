@@ -23,6 +23,9 @@ video {
   font-style: italic;
   font-weight: 400;
   word-wrap: break-word;
+  width: 185px;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -142,4 +145,78 @@ a {
   align-items: center;
 }
 /*.buying-section-------------------------------------------------------------------------------------------------------*/
+.buying-section {
+  background-color: #e6edea;
+  padding: 40px 187px 132px 55px;
+}
+
+.buying-section-titles {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+
+.buying-section h4 {
+  margin-left: 30px;
+  color: black;
+  font-size: 48px;
+  font-family: Instrument Serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-bottom: 32px;
+}
+
+.buying-section h3 {
+  color: black;
+  font-size: 96px;
+  font-family: Instrument Serif;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+h5 {
+  color: black;
+  font-size: 24px;
+  font-family: Instrument Serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-bottom: 11px;
+}
+.image-book {
+  width: 20%;
+  height: 100%;
+}
+.buying-section p {
+  color: black;
+  font-size: 14px;
+  font-family: IBM Plex Mono;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+ul {
+  color: black;
+  font-size: 14px;
+  font-family: IBM Plex Mono;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.book-info {
+  margin-bottom: 32px;
+}
+
+.summary {
+  margin-bottom: 26px;
+}
+
+.buying-section .button {
+  margin-bottom: 132px; /* A VOIR SI CE NE SERAIT PAS MIEUX DE METTRE UNE MAEGI POUR TTE LA SECTION */
+}
+
 /*footer----------------------------------------------------------------------------------------------------------------*/
+footer {
+  background-color: #bad6ca;
+}
