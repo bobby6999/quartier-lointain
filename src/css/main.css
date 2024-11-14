@@ -31,6 +31,10 @@ video {
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style-type: none;
+}
 /* choice-------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .choice {
@@ -147,18 +151,27 @@ a {
 /*.buying-section-------------------------------------------------------------------------------------------------------*/
 .buying-section {
   background-color: #e6edea;
-  padding: 40px 187px 132px 55px;
-}
-
-.buying-section-titles {
+  padding: 40px 167px 132px 0px;
   display: flex;
-  align-items: center;
   flex-direction: row;
-  margin-bottom: 32px;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
+.buying-section-right {
+  margin-left: 20px;
+}
+
+.buying-section-left {
+  margin-right: 100px;
+  margin-left: 42px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
 .buying-section h4 {
-  margin-left: 30px;
   color: black;
   font-size: 48px;
   font-family: Instrument Serif;
@@ -174,6 +187,7 @@ a {
   font-style: italic;
   font-weight: 400;
   word-wrap: break-word;
+  white-space: nowrap;
 }
 
 h5 {
@@ -184,9 +198,11 @@ h5 {
   word-wrap: break-word;
   margin-bottom: 11px;
 }
+
 .image-book {
-  width: 20%;
-  height: 100%;
+  width: 90%;
+  height: auto;
+  margin-top: -20px;
 }
 .buying-section p {
   color: black;
@@ -194,6 +210,7 @@ h5 {
   font-family: IBM Plex Mono;
   font-weight: 300;
   word-wrap: break-word;
+  margin-bottom: 26px;
 }
 
 ul {
@@ -202,18 +219,7 @@ ul {
   font-family: IBM Plex Mono;
   font-weight: 300;
   word-wrap: break-word;
-}
-
-.book-info {
-  margin-bottom: 32px;
-}
-
-.summary {
-  margin-bottom: 26px;
-}
-
-.buying-section .button {
-  margin-bottom: 132px; /* A VOIR SI CE NE SERAIT PAS MIEUX DE METTRE UNE MAEGI POUR TTE LA SECTION */
+  margin-bottom: 60px;
 }
 
 /*footer----------------------------------------------------------------------------------------------------------------*/

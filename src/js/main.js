@@ -44,7 +44,7 @@ gsap.to(".train", {
     pin: true,
     scrub: true,
     start: "top top",
-    end: "top -100%", // à ajuster
+    end: "top -100%", //
   },
   left: "0", // Animer la propriété left pour amener le train au centre
   ease: "none",
