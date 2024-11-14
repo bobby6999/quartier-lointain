@@ -37,8 +37,20 @@ gsap
 
   .call(enableScroll); // scroll est possible
 
-/*images slide________________________________________________________________________ */
+/*train slide_____________________________________________________________________________*/
+gsap.to(".train", {
+  scrollTrigger: {
+    trigger: ".train-container",
+    pin: true,
+    scrub: true,
+    start: "top top",
+    end: "top -100%", // à ajuster
+  },
+  left: "0", // Animer la propriété left pour amener le train au centre
+  ease: "none",
+});
 
+/*image slide___________________________________________________________________________*/
 const spaceHolder = document.querySelector(".space-holder");
 const horizontal = document.querySelector(".horizontal");
 spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
