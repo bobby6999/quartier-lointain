@@ -13,12 +13,35 @@ video {
   display: block;
 }
 /* général------------------------------------------------------------------------------------------------------*/
+.button {
+  background-color: white;
+  border: 2px black solid;
+  padding: 14px;
+  color: black;
+  font-size: 20px;
+  font-family: Instrument Serif;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 
+a {
+  text-decoration: none;
+}
 /* choice-------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .choice {
   background-image: url(../img/bg-moon.svg);
   color: antiquewhite;
+}
+
+.choice-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 448px;
+  text-decoration: none;
 }
 
 /* first-logo-------------------------------------------------------------------------------------------------------------------------------------------------------- */
