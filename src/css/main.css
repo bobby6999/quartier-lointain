@@ -45,8 +45,71 @@ video {
   top: 320px;
   left: 20px;
 }
-/*.train----------------------------------------------------------------------------------------------------------------*/
-/*.container-slide------------------------------------------------------------------------------------------------------*/
+/*.train et slides ----------------------------------------------------------------------------------------------------------------*/
+.train {
+  height: 180px;
+  margin-bottom: 120px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.space-holder {
+  position: relative;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.cards {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sample-card {
+  position: relative;
+  height: 300px;
+  width: 500px;
+  margin-right: 75px;
+  flex-shrink: 0;
+}
+
+/*slides------------------------------------------------------------------------------------------------------*/
+.images-slide {
+  display: flex;
+  flex-direction: row;
+}
+/*.choix----------------------------------------------------------------------------------------------------------------*/
+.choice {
+  padding: 180px 0 420px 0;
+}
 /*.bande annonce--------------------------------------------------------------------------------------------------------*/
+.bandeannonce {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+}
 /*.buying-section-------------------------------------------------------------------------------------------------------*/
 /*footer----------------------------------------------------------------------------------------------------------------*/

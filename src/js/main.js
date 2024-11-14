@@ -14,28 +14,47 @@ function enableScroll() {
   document.body.style.overflow = "";
 }
 
-/* logo puis papillon--------------------------------*/
+/* logo puis papillon_____________________________________________________________________*/
 gsap
   .timeline()
   .call(disableScroll)
   .to(".first-logo", { opacity: 0, duration: 2 }) // Fade out the logo
-  .from("#papillon", { opacity: 0, duration: 1 })
-  .to(".first-logo", { duration: 2 })
-  // Butterfly movement animations
-  .to("#papillon", { x: 100, duration: 1 })
-  .to("#papillon", { x: 200, y: -20, duration: 1 })
-  .to("#papillon", { x: 300, y: -80, duration: 1 })
-  .to("#papillon", { x: 400, y: -60, duration: 1 })
-  .to("#papillon", { x: 500, y: 0, duration: 1 })
+  .from("#papillon", { opacity: 0, duration: 0.5 })
+  .to({}, { duration: 0 })
+  //animation du papillon
+  .to("#papillon", { x: 100, duration: 0.3 })
+  .to("#papillon", { x: 200, y: -20, duration: 0.3 })
+  .to("#papillon", { x: 300, y: -80, duration: 0.3 })
+  .to("#papillon", { x: 400, y: -60, duration: 0.3 })
+  .to("#papillon", { x: 500, y: 0, duration: 0.3 })
+  .to("#papillon", { scale: 1.5, duration: 0.3 })
+  .to("#papillon", { scale: 1, duration: 0.3 })
+  .to("#papillon", { scale: 1.5, duration: 0.3 })
+  .to("#papillon", { scale: 1, duration: 0.3 })
 
-  // Butterfly scaling animations (pulsing effect)
-  .to("#papillon", { scale: 1.5, duration: 1 })
-  .to("#papillon", { scale: 1, duration: 1 })
-  .to("#papillon", { scale: 1.5, duration: 1 })
-  .to("#papillon", { scale: 1, duration: 1 })
-
-  // Final butterfly movements
   .to("#papillon", { x: 800, y: -100, duration: 1, delay: 1 })
   .to("#papillon", { x: 900, y: -200, duration: 1 })
 
-  .call(enableScroll); // Enable scrolling at the end
+  .call(enableScroll); // scroll est possible
+
+/*images slide________________________________________________________________________ */
+
+const spaceHolder = document.querySelector(".space-holder");
+const horizontal = document.querySelector(".horizontal");
+spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+
+function calcDynamicHeight(ref) {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const objectWidth = ref.scrollWidth;
+  return objectWidth - vw + vh + 100;
+}
+
+window.addEventListener("scroll", () => {
+  const sticky = document.querySelector(".sticky");
+  horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+});
+
+window.addEventListener("resize", () => {
+  spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+});
