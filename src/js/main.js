@@ -31,7 +31,6 @@ gsap
   .to("#papillon", { scale: 1, duration: 0.3 })
   .to("#papillon", { scale: 1.5, duration: 0.3 })
   .to("#papillon", { scale: 1, duration: 0.3 })
-
   .to("#papillon", { x: 800, y: -100, duration: 1, delay: 1 })
   .to("#papillon", { x: 900, y: -200, duration: 1 })
 

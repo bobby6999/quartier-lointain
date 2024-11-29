@@ -40,6 +40,9 @@ ul {
 .choice {
   background-image: url(../img/bg-moon.svg);
   color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .choice-buttons {
@@ -127,7 +130,7 @@ ul {
   position: relative;
   height: 300px;
   width: 500px;
-  margin-right: 75px;
+  margin-right: 2px;
   flex-shrink: 0;
 }
 
@@ -139,6 +142,46 @@ ul {
 /*.choix----------------------------------------------------------------------------------------------------------------*/
 .choice {
   padding: 180px 0 420px 0;
+}
+
+.choice-quote {
+  color: black;
+  font-size: 48px;
+  font-family: Instrument Serif;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  color: black;
+  font-size: 48px;
+  font-family: Instrument Serif;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 176px 0 178px;
+  text-align: center;
+}
+
+.choice-author {
+  color: black;
+  font-size: 36px;
+  font-family: Instrument Serif;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 157px;
+}
+/*présent & passé*/
+.memory-present {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 227px 0 348px 0;
 }
 /*.bande annonce--------------------------------------------------------------------------------------------------------*/
 .bandeannonce {
@@ -225,4 +268,21 @@ ul {
 /*footer----------------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: #bad6ca;
+}
+
+.footer-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 38px;
+}
+
+.footer-text {
+  color: black;
+  font-size: 12px;
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left: 34px;
+  padding-bottom: 23px;
 }
